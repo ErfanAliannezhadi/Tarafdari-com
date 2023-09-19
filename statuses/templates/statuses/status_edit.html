@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'statuses/css/status_edit.css' %}">
+{% endblock %}
+
+{% block body %}
+    <style>
+        #tabs ul {
+            overflow: hidden;
+            *zoom: 1;
+            line-height: 34px;
+            background-color: #474f57;
+            color: #fff;
+            padding-right: 0;
+        }
+
+        #tabs ul li {
+            margin: 0;
+            padding: 0;
+            border: none !important;
+            list-style: none;
+        }
+
+        #tabs ul li.active {
+            background-color: #27bcc9;
+        }
+    </style>
+    <section id="tabs" class="container my-3">
+        <ul class="d-flex flex-row">
+            <li class="px-2 active"><a href="{% url 'statuses:edit_status' status_pk %}">ویرایش</a></li>
+            <li class="px-2"><a href="{% url 'statuses:status_detail' status_pk %}">مشاهده</a></li>
+        </ul>
+    </section>
+    <section id="main" class="my-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        {{ form.content }}
+                        {% if status_is_message %}
+                            <label class="pe-2">{{ form.is_private.label }} :</label>
+                            {{ form.is_private }}
+                        {% endif %}
+                        <div class="mt-3">
+                            <button type="submit">ارسال</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

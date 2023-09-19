@@ -1,0 +1,20 @@
+{% extends 'accounts/base_profile.html' %}
+{% load static %}
+{% block other_stylesheet %}
+    <link rel="stylesheet" href="{% static 'accounts/css/block_report.css' %}">
+{% endblock %}
+{% block title %}طرفداری | بلاک کردن کاربر{% endblock %}
+{% block main %}
+    <div class="block-form bg-white p-3">
+        <h5>دلیل اینکه {{ user.full_name }} را بلاک میکنید</h5>
+        <form action="" method="post">
+        {% csrf_token %}
+            {% for field in form.reason %}
+                <div class="row py-2">
+                {{ field }}
+                </div>
+            {% endfor %}
+        <input type="submit" value="ارسال">
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,273 @@
+h1 {
+    font-size: 1.30769em;
+    line-height: 1.29412em;
+}
+
+#post {
+    border: 1px solid #d6d6d6;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#post .some-details {
+    background-color: #f6f6f6;
+    color: #999;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+#post .some-details a {
+    color: black;
+}
+
+#post .some-details .user-picture {
+    width: 36px;
+    height: 36px;
+    float: right;
+    margin: 0 0 0 5px;
+    overflow: hidden;
+}
+
+#post .some-details abbr {
+    float: left;
+}
+
+#post .some-details2 {
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+#post .emoji-details {
+    float: left;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+#post .emoji-details .emoji {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 24px;
+    margin: 0 5px 0 0;
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#post .emoji-details a {
+    color: black !important;
+}
+
+#post .emoji-details .emoji-like {
+    background-image: url(https://tarafdari.com/sites/all/themes/hope/images/emoji/like.png?1668351057);
+}
+
+#post .emoji-details .emoji-like.selected {
+    background-image: url(https://www.tarafdari.com/sites/all/themes/hope/images/emoji/like-selected.png?1668351057);
+}
+
+#post .emoji-details .emoji-dislike {
+    background-image: url(https://tarafdari.com/sites/all/themes/hope/images/emoji/dislike.png?1668351057);
+}
+
+#post .emoji-details .emoji-dislike.selected {
+    background-image: url(https://www.tarafdari.com/sites/all/themes/hope/images/emoji/dislike-selected.png?1668351057);
+}
+
+#post .emoji-details .emoji-heart {
+    background-image: url(https://tarafdari.com/sites/all/themes/hope/images/emoji/heart.png?1668351057);
+}
+
+#post .emoji-details .emoji-heart.selected {
+    background-image: url(https://www.tarafdari.com/sites/all/themes/hope/images/emoji/heart-selected.png?1668351057);
+}
+
+#post .post-content {
+    text-align: justify;
+}
+
+#post .video-file {
+    outline: 0;
+    display: block;
+    vertical-align: top;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    word-break: initial;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+}
+
+#post .video-file video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#post .media-frame {
+    overflow: hidden;
+    *zoom: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: block;
+}
+
+#post .media-frame .download {
+    padding: 2px 5px;
+    line-height: 24px;
+    background-color: #ff9b00;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmOWIwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U2OGMwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==);
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff9b00), color-stop(100%, #e68c00));
+    background-image: -moz-linear-gradient(#ff9b00, #e68c00);
+    background-image: -webkit-linear-gradient(#ff9b00, #e68c00);
+    background-image: linear-gradient(#ff9b00, #e68c00);
+    color: #fff;
+    float: right;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+}
+
+#comments {
+    position: relative;
+    background-color: #f0f0f0;
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+
+#comments h3 {
+    line-height: 26px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+#comments h3 span {
+    font-weight: normal;
+    font-size: 0.9em;
+    line-height: 26px;
+}
+
+#comments .comment {
+    position: relative;
+    min-height: 48px;
+    padding: 10px 68px 10px 10px;
+    margin: 0 0 10px 0;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+#comments .comment .user-picture {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+}
+
+#comments .comment .user-picture img {
+    border-radius: 50%;
+}
+
+#comments .comment .username {
+    margin: 0 0 0 10px;
+    float: right;
+    color: #333;
+    font-weight: bold;
+}
+
+#comments .comment p {
+    color: black !important;
+}
+
+#comments .comment .comment-footer {
+    position: relative;
+    margin-bottom: 5px;
+    color: #999;
+    line-height: 30px;
+}
+
+#comments .comment .comment-footer .comment-date {
+    float: right;
+    margin: 0 0 0 10px;
+    border-bottom: none !important;
+    text-decoration: none;
+}
+
+#comments .comment .comment-footer .emoji-count {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+#comments .comment .comment-footer a {
+    color: inherit;
+}
+
+#comments .comment .comment-footer a:hover {
+    color: #ff9b00;
+}
+
+#comments .comment .comment-footer .emoji-details {
+    float: left;
+}
+
+#comments .comment .comment-footer .emoji-details a {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 24px;
+    margin: 0 5px 0 0;
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#comments .comment .comment-footer .emoji-details .emoji-like {
+    background-image: url(https://tarafdari.com/sites/all/themes/hope/images/emoji/like.png?1668351057);
+}
+
+#comments .comment .comment-footer .emoji-details .emoji-like.selected {
+    background-image: url(https://www.tarafdari.com/sites/all/themes/hope/images/emoji/like-selected.png?1668351057);
+}
+
+#comments .comment .comment-footer .emoji-details .emoji-dislike {
+    background-image: url(https://tarafdari.com/sites/all/themes/hope/images/emoji/dislike.png?1668351057);
+}
+
+#comments .comment .comment-footer .emoji-details .emoji-dislike.selected {
+    background-image: url(https://www.tarafdari.com/sites/all/themes/hope/images/emoji/dislike-selected.png?1668351057);
+}
+
+#comments .comment-create-form textarea {
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#comments .comment-create-form button {
+    padding: 5px 10px;
+    border: 1px solid #ff9b00;
+    background-color: transparent;
+    outline: none;
+    border-radius: 4px;
+    float: left;
+}

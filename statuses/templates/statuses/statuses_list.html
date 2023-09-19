@@ -1,0 +1,7 @@
+{% extends 'statuses/base_statuses_list.html' %}
+{% load static %}
+{% block scripts %}
+    <script type="text/javascript">
+        document.querySelector('#tabs ul li:nth-child(2)').className = 'px-2 active'
+    </script>
+{% endblock %}

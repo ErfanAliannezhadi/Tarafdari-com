@@ -1,0 +1,102 @@
+input[type='file'] {
+    width: 100%;
+    padding: 10px 0;
+}
+
+button {
+    background-color: #ff9b00;
+    border: medium none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    outline: medium none;
+    padding: 0 15px;
+    margin: 5px 0 0 0;
+}
+
+.user-picture2 {
+    width: 42px;
+    height: 42px;
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+.flash-message {
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 5px solid transparent;
+    border-right: 7px solid #aaaaaa;
+    border-bottom: 5px solid transparent;
+    float: right;
+    margin-top: 5px !important;
+}
+
+.username a {
+    float: right;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.username a, time {
+    color: #282e34 !important;
+}
+
+.status-image a img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.status-video video {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.status-audio audio {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.like-section a {
+    color: #282e34 !important;
+
+}
+
+.like-section i {
+    background-image: url('https://tarafdari.com/sites/all/themes/hope_user/images/sprites/icon20-s859610fd85.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-left: 5px;
+    margin-top: 0;
+}
+
+.status .tools {
+    overflow: hidden;
+    *zoom: 1;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #d6d6d6;
+}
+
+.status .tools a {
+    float: left;
+    padding: 0 5px;
+    line-height: 32px;
+    border-right: 1px solid #fff;
+    color: #282e34;
+    text-decoration: none;
+}
+
+.status .tools a:hover {
+    color: #ff9b00;
+}

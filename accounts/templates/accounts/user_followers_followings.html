@@ -1,0 +1,30 @@
+{% extends 'accounts/base_profile.html' %}
+{% load static %}
+{% block other_stylesheet %}
+    <link rel="stylesheet" href="{% static 'accounts/css/user_followers_followers.css' %}">
+{% endblock %}
+{% block title %}لیست دنبال کنندگان/ شوندگان{% endblock %}
+{% block main %}
+    <div class="bg-white p-2">
+        <div class="row">
+            {% for user in f_users %}
+                <div class="col-3 p-2">
+                    <a href="{{ user.get_absolute_url }}"><img src="{{ user.profile_image.url }}" width="160"
+                                                               height="160"></a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="bg-white px-1 my-2 d-flex flex-row page-list">
+        <div><a href="?page=1">&laquo; اولین</a></div>
+        {% if f_users.has_previous %}
+            <div><a href="?page={{ f_users.previous_page_number }}">قبلی</a></div>
+        {% endif %}
+        <div style="color: #fff; background-color: #ff9b00;"><span>{{ f_users.number }}</span></div>
+        {% if f_users.has_next %}
+            <div><a href="?page={{ f_users.next_page_number }}">بعدی</a></div>
+        {% endif %}
+        <div><a href="{{ f_users.paginator.num_pages }}">آخرین</a></div>
+    </div>
+{% endblock %}

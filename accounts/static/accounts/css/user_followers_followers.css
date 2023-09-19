@@ -1,0 +1,21 @@
+.page-list {
+    padding: 10px;
+}
+.page-list div {
+    display: block;
+    line-height: 30px;
+    background-color: #d6d6d6;
+    margin: 0 2px;
+    padding: 0 2px;
+    height: 30px;
+    border-radius: 5px;
+    min-width: 26px;
+}
+.page-list div:hover {
+    background-color: #ff9b00;
+    color: #fff !important;
+}
+
+.page-list a {
+    color: #181a1d;
+}

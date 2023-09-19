@@ -1,0 +1,132 @@
+#post-details h2 {
+    font-size: 1.8em;
+    line-height: 1.46667em;
+}
+
+#comments {
+    position: relative;
+    background-color: #f0f0f0;
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+
+#comments h3 {
+    line-height: 26px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+#comments h3 span {
+    font-weight: normal;
+    font-size: 0.9em;
+    line-height: 26px;
+}
+
+#comments .comment {
+    position: relative;
+    min-height: 48px;
+    padding: 10px 68px 10px 10px;
+    margin: 0 0 10px 0;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+#comments .comment .user-picture {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+}
+
+#comments .comment .user-picture img {
+    border-radius: 50%;
+}
+
+#comments .comment .username {
+    margin: 0 0 0 10px;
+    float: right;
+    color: #333;
+    font-weight: bold;
+}
+
+#comments .comment p {
+    color: black !important;
+}
+
+#comments .comment .comment-footer {
+    position: relative;
+    margin-bottom: 5px;
+    color: #999;
+    line-height: 30px;
+}
+
+#comments .comment .comment-footer .comment-date {
+    float: right;
+    margin: 0 0 0 10px;
+    border-bottom: none !important;
+    text-decoration: none;
+}
+
+#comments .comment .comment-footer .emoji-count {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+#comments .comment .comment-footer a {
+    color: inherit;
+}
+
+#comments .comment .comment-footer a:hover {
+    color: #ff9b00;
+}
+
+#comments .comment .comment-footer .emoji-details {
+    float: left;
+}
+
+#comments .comment .comment-footer .emoji-details a {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 24px;
+    margin: 0 5px 0 0;
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#comments .comment .comment-footer .emoji-details .emoji-like {
+    background-image: url(https://tarafdari.com/sites/all/themes/hope/images/emoji/like.png?1668351057);
+}
+
+#comments .comment .comment-footer .emoji-details .emoji-like.selected {
+    background-image: url(https://www.tarafdari.com/sites/all/themes/hope/images/emoji/like-selected.png?1668351057);
+}
+
+#comments .comment .comment-footer .emoji-details .emoji-dislike {
+    background-image: url(https://tarafdari.com/sites/all/themes/hope/images/emoji/dislike.png?1668351057);
+}
+
+#comments .comment .comment-footer .emoji-details .emoji-dislike.selected {
+    background-image: url(https://www.tarafdari.com/sites/all/themes/hope/images/emoji/dislike-selected.png?1668351057);
+}
+
+#comments .comment-create-form textarea {
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 5px 10px;
+    border: 1px solid #ff9b00;
+    background-color: transparent;
+    outline: none;
+    border-radius: 4px;
+    float: left;
+}

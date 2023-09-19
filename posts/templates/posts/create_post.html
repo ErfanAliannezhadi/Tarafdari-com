@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}ایجاد مطلب | طرفداری{% endblock %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static 'posts/css/create_post.css' %}">
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="bg-white p-4 create-post-form">
+            <div class="row">
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                {% for field in form %}
+                    <div class="col-12 mt-4">
+                        {{ field.label }}
+                    </div>
+                    <div class="col-12">
+                        {{ field }}
+                    </div>
+                {% endfor %}
+                <button type="submit" class="mt-4">ایجاد مطلب</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
+    <script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script>
+{% endblock %}

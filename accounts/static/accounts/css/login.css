@@ -1,0 +1,98 @@
+#form-errors {
+    background-color: #fef5f1;
+    color: #8c2e0b;
+    background-position: 99% 8px;
+    padding: 10px 50px 10px 10px;
+    border: 1px solid #ed541d;
+}
+
+#tabs ul {
+    overflow: hidden;
+    *zoom: 1;
+    line-height: 34px;
+    background-color: #474f57;
+    color: #fff;
+    padding-right: 0;
+}
+
+#tabs ul li {
+    margin: 0;
+    padding: 0;
+    border: none !important;
+    list-style: none;
+}
+
+#tabs ul li.active {
+    background-color: #27bcc9;
+}
+
+#page-user {
+    background-color: #fff;
+    color: #474f57;
+}
+
+#page-user p {
+    color: #474f57 !important;
+}
+
+#page-user button {
+    background-color: #27bcc9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 0 10px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    direction: ltr;
+    text-align: center;
+}
+
+form button {
+    width: 100%;
+    line-height: 44px;
+    border: none;
+    outline: none;
+    background-color: #ff9b00 !important;
+    color: #fff;
+}
+
+.forgot-password {
+    margin: 0 30% 0 0;
+    line-height: 44px;
+    color: #8f8f8f;
+    text-align: right;
+}
+
+.login-service {
+    overflow: hidden;
+    *zoom: 1;
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.login-service a {
+    background-image: url("https://www.tarafdari.com/sites/all/themes/hope_user/images/google.png?1560088711");
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+    float: right;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.login-service span {
+    line-height: 32px;
+    margin: 0 0 0 5px;
+    float: right;
+}
