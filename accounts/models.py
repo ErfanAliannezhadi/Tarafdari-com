@@ -71,7 +71,7 @@ class UserModel(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_auther = models.BooleanField(default=False)
     is_admin = models.BooleanField(default=False)
-    is_phone_verified = models.BooleanField(default=False)
+    is_phone_verified = models.BooleanField(default=True)
     registration_date = models.DateField(auto_now_add=True, verbose_name='تاریخ عضویت')
     last_online = models.DateTimeField(verbose_name='آخرین انلاین', blank=True, null=True, auto_now_add=True)
 
@@ -177,7 +177,7 @@ class BlockModel(models.Model):
     ]
     from_user = models.ForeignKey(UserModel, on_delete=models.CASCADE, related_name='blocked_by')
     to_user = models.ForeignKey(UserModel, on_delete=models.CASCADE, related_name='blocked_users')
-    reason = models.CharField(max_length=1, choices=CHOICES_OF_REASON)
+    reason = models.CharField(max_length=1, choices=CHOICES_OF_REASON, blank=True, null=True)
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:

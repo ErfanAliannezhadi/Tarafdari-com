@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'social_django',
     'taggit',
     'rest_framework',
+    'rest_framework.authtoken',
 
 ]
 
@@ -180,3 +181,11 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
     'https://www.googleapis.com/auth/userinfo.email',
 ]
+
+
+# REST FRAMEWORK
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}

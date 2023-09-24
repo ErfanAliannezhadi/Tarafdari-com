@@ -32,7 +32,7 @@ class PostModel(models.Model):
     file = models.FileField(upload_to=post_file_path, verbose_name='رسانه', blank=True, null=True,
                             validators=[validate_file_extension])
     numbers_of_seen = models.IntegerField(default=0, verbose_name='تعداد مشاهدات')
-    teams = models.ManyToManyField(TeamModel, verbose_name='تیم ها', blank=True, null=True)
+    teams = models.ManyToManyField(TeamModel, verbose_name='تیم ها', blank=True)
     tags = TaggableManager(verbose_name='تگ ها', blank=True)
     is_news = models.BooleanField(verbose_name='خبر')
 
