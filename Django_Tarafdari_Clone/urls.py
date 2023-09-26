@@ -22,6 +22,7 @@ api_urlpatterns = [
     path('accounts/', include('accounts.api_urls', namespace='api_accounts')),
     path('posts/', include('posts.api_urls', namespace='api_posts')),
     path('statuses/', include('statuses.api_urls', namespace='api_statuses')),
+    path('teams/', include('teams', namespace='api_teams')),
 ]
 
 urlpatterns = [
